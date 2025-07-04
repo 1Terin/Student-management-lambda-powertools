@@ -1,0 +1,25 @@
+{
+  "name": "your-sam-app",
+  "version": "1.0.0",
+  "description": "Lambda function for student data processing",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "sam local start-api",
+    "deploy": "sam deploy --guided"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^2.23.0",
+    "@aws-lambda-powertools/metrics": "^2.23.0",
+    "@aws-lambda-powertools/tracer": "^2.23.0",
+    "@jmespath-community/jmespath": "^1.1.5",
+    "aws-lambda": "^1.0.7",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.138",
+    "@types/node": "^20.14.9",
+    "typescript": "^5.5.3"
+  }
+}

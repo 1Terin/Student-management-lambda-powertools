@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "strict": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "module": "es2020",
+    "esModuleInterop": true,
+    "skipLibCheck": true, 
+    "moduleResolution": "node",
+    "outDir": "./build", 
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+}
